@@ -1,0 +1,35 @@
+.calculadora{
+    display:block;
+    margin:0 auto;
+    padding-left:23px;
+    background-color:rgb(20, 44, 75 );
+    border: 1.5px solid rgb(33, 204, 236);
+    width:380px;
+    height:630px;
+    border-radius:10px;
+  }
+  
+  #resultado{
+    display:block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    width:340px;
+    height: 120px;
+    line-height: 100px;
+    background-color:rgb(155, 203, 205);
+  }
+/*botones normales: anchura y margen*/ 
+.calculadora [type=button] {
+    margin-bottom:7px;
+    margin-right: 7px;
+    width: 60px;
+    height: 60px;
+    padding: 0; 
+    background-color: rgb(29, 166, 192);
+    border:rgb(227, 65, 204);
+    border-radius:2px;
+ }
+/*botones especiales*/ 
+.calculadora input.alto {  padding: 0;margin: 0px;height: 130px; }
+.calculadora input.largo {  padding: 0;margin: 0px;width: 130px; margin-right: 4px;   }

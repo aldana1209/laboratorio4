@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="css/estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="calculadora">
+            <form action="#" name="calculadora" id="calculadora">
+                <p id="resultado">0</p>
+                <p>
+                   <input type="button" value="←" onclick="retro()"   />
+                    <input type="button" value="CE" onclick="borradoParcial()"/>
+                    <input type="button" value="C" onclick="borradoTotal()"/>
+                    <input type="button" value="±" onclick=""/>
+                    <input type="button" value="√" onclick="raizc()"/>
+               </p>
+                <p>
+                    <input type="button" value="7" onclick="numero('7')"/>
+                    <input type="button" value="8" onclick="numero('8')"/>
+                    <input type="button" value="9" onclick="numero('9')"/>
+                    <input type="button" value="/" onclick="operar('/')"/>
+                    <input type="button" value="%" onclick="porcentaje()" />
+                </p>
+                <p>
+                    <input type="button" value="4" onclick="numero('4')" />
+                    <input type="button" value="5" onclick="numero('5')" />
+                    <input type="button" value="6" onclick="numero('6')" />
+                    <input type="button" value="*" onclick="operar('*')" />
+                    <input type="button" value="1/x"  />
+                </p>
+                <table>
+                    <tr >       
+                <p>
+                <td > <input type="button" value="1" onclick="numero('1')" /></td>
+                <td> <input type="button" value="2" onclick="numero('2')" /></td>
+                <td>  <input type="button" value="3" onclick="numero('3')" /></td>
+                <td>   <input type="button" value="-" onclick="operar('-')" /></td>
+                <td rowspan="3"><input type="button" value="=" class=alto onclick="igualar()" /></td>
+                     
+                </p></tr>
+                <tr>
+                    <p>
+                   
+                    <td colspan="2"><input type="button" value="0" class="largo" onclick="numero('0')" /></td> 
+                    <td><input type="button" value="." onclick="numero('.')" /></td>
+                    <td><input type="button" value="+" onclick="operar('+')" /></td>
+                   
+                </tr></p>
+                </table>
+            </form>
+        </div>
+    </body>
+    <script src="javascript/script.js" type="text/javascript"></script>
+</html>
